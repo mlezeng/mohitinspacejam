@@ -16,13 +16,6 @@
     margin: 5px;
 	}
 
-	html {
-		-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-    	background-size: cover;
-	}
-
 	@-webkit-keyframes rotate {
   		from {
   			-webkit-transform: rotate(0deg);
@@ -46,10 +39,10 @@
 
 <script>
 
-	var x = 5;
-	var y = 5;
-	var max_x = window.innerWidth - 352;
-	var max_y = window.innerHeight - 348;
+	var x = 20;
+	var y = 20;
+	var max_x = window.innerWidth - 256;
+	var max_y = window.innerHeight - 156;
 	var xoffset = 1;
 	var yoffset = 1;
 
@@ -62,8 +55,8 @@
 		y = y + yoffset;
 
 		//Move the image to the new location
-		document.getElementByID("mohit").style.top = y+'px';
-		document.getElementByID("mohit").style.left = x+'px';
+		document.getElementById("mohit").style.top = y+'px';
+		document.getElementById("mohit").style.left = x+'px';
 
 		//if reach boundaries, reset offset vectors
 		if ((x+xoffset > max_x) || (x+xoffset < 0))
