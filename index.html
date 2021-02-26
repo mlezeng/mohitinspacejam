@@ -82,17 +82,6 @@
 
 
 
-
-<audio name="catJAM"
-	src="music/mohit_in_spacejam_take1.mp3"
-	preload
-	autoplay
-	controls
-	loop>
-</audio>
-
-
-
 <center>
 
 
@@ -335,7 +324,7 @@
 
 
 
-<img src="img/p-jamlogo.png" height=165 width=272 alt="Space Jam" border=0>
+<img src="img/p-jamlogo.png" height=165 width=272 alt="Space Jam" border=0 onclick="spaceJAM()";>
 
 
 
@@ -343,6 +332,14 @@
 
 
 
+<script>
+	function spaceJAM() {
+		var audio = document.getElementById("spaceJAM");
+		audio.play();
+	}
+</script>
+
+<audio id="spaceJAM" src="music/mohit_in_spacejam_take1.mp3"></audio>audio>
 
 
 
